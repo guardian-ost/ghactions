@@ -10,10 +10,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
+      run: nodejs-app
       app: nodejs-app
   template:
     metadata:
       labels:
+        run: nodejs-app
         app: nodejs-app
     spec:
       containers:
