@@ -10,13 +10,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      run: nodejs-app
-      app: nodejs-app
+      app: nodejs-app 
   template:
     metadata:
       labels:
-        run: nodejs-app
-        app: nodejs-app
+        app: nodejs-app  
     spec:
       containers:
       - name: nodejs-app
@@ -36,4 +34,4 @@ spec:
   ports:
   - name: http
     targetPort: 3000
-    port: 3000
+    port: 80
